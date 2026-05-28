@@ -6,7 +6,7 @@
 /*   By: wjunpuan <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/19 08:26:57 by wjunpuan          #+#    #+#             */
-/*   Updated: 2026/05/21 14:22:02 by wjunpuan         ###   ########.fr       */
+/*   Updated: 2026/05/28 17:20:09 by wjunpuan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -120,7 +120,7 @@ char	*ft_convert_base(char *nbr, char *base_from, char *base_to)
 	if (dcm == 0)
 	{
 		result = malloc(2);
-		result[0] = '0';
+		result[0] = base_to[0];
 		result[1] = '\0';
 		return (result);
 	}
